@@ -7,7 +7,7 @@ import { registerListProxies } from './tools/listProxies.js';
 export function createServer(): McpServer {
   const server = new McpServer({
     name: 'proxy-finder-mcp',
-    version: '0.1.1',
+    version: '0.1.2',
   });
 
   registerFindProxy(server);
