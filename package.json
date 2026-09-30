@@ -1,0 +1,69 @@
+{
+  "name": "proxy-finder-mcp",
+  "version": "0.1.0",
+  "description": "MCP server that finds and validates working free HTTP/HTTPS/SOCKS proxies by country, for geofenced requests and debugging blocked curls.",
+  "type": "module",
+  "bin": {
+    "proxy-finder-mcp": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shakthizen/proxy-mcp.git"
+  },
+  "homepage": "https://shakthizen.github.io/proxy-mcp/",
+  "bugs": {
+    "url": "https://github.com/shakthizen/proxy-mcp/issues"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "proxy",
+    "proxy-list",
+    "free-proxy",
+    "socks5",
+    "geolocation",
+    "claude",
+    "claude-code"
+  ],
+  "author": "shakthizen",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.31.0",
+    "axios": "^1.20.0",
+    "https-proxy-agent": "^7.0.6",
+    "socks-proxy-agent": "^8.0.5",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "@types/node": "^24.16.0",
+    "eslint": "^9.36.0",
+    "prettier": "^3.6.2",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.0",
+    "vitest": "^3.2.4"
+  }
+}
