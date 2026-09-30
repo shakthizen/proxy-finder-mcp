@@ -1,6 +1,8 @@
 # proxy-finder-mcp
 
 [![npm version](https://img.shields.io/npm/v/proxy-finder-mcp.svg)](https://www.npmjs.com/package/proxy-finder-mcp)
+[![CI](https://github.com/shakthizen/proxy-finder-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/shakthizen/proxy-finder-mcp/actions/workflows/ci.yml)
+[![Release](https://github.com/shakthizen/proxy-finder-mcp/actions/workflows/release.yml/badge.svg)](https://github.com/shakthizen/proxy-finder-mcp/actions/workflows/release.yml)
 [![license](https://img.shields.io/npm/l/proxy-finder-mcp.svg)](./LICENSE)
 
 An MCP (Model Context Protocol) server that finds and validates **working free HTTP/HTTPS/SOCKS
