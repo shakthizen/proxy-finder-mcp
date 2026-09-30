@@ -56,6 +56,22 @@ Add to `.cursor/mcp.json`:
 }
 ```
 
+### Google Antigravity
+
+Open the **Manage MCP Servers** panel (Command Palette → "MCP") and add a new server, or edit
+its `mcp_config.json` directly with the same `mcpServers` block used above:
+
+```json
+{
+  "mcpServers": {
+    "proxy-finder": {
+      "command": "npx",
+      "args": ["-y", "proxy-finder-mcp"]
+    }
+  }
+}
+```
+
 ## Tools
 
 | Tool | Description |
@@ -121,8 +137,8 @@ The agent calls `find_proxy` with `{ "country": "FR" }` and gets back something 
 ## Local development
 
 ```bash
-git clone https://github.com/shakthizen/proxy-mcp.git
-cd proxy-mcp
+git clone https://github.com/shakthizen/proxy-finder-mcp.git
+cd proxy-finder-mcp
 npm install
 npm run build
 npm run typecheck

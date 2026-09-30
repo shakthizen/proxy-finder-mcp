@@ -29,11 +29,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shakthizen/proxy-mcp.git"
+    "url": "git+https://github.com/shakthizen/proxy-finder-mcp.git"
   },
-  "homepage": "https://shakthizen.github.io/proxy-mcp/",
+  "homepage": "https://shakthizen.github.io/proxy-finder-mcp/",
   "bugs": {
-    "url": "https://github.com/shakthizen/proxy-mcp/issues"
+    "url": "https://github.com/shakthizen/proxy-finder-mcp/issues"
   },
   "keywords": [
     "mcp",

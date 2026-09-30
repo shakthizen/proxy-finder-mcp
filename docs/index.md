@@ -8,7 +8,7 @@ An MCP server that finds and validates **working free HTTP/HTTPS/SOCKS proxies**
 filtered by country. Built for agents that need to route a request through a specific country to
 debug or bypass geo-blocking — no manual proxy hunting required.
 
-[View source on GitHub](https://github.com/shakthizen/proxy-mcp) ·
+[View source on GitHub](https://github.com/shakthizen/proxy-finder-mcp) ·
 [View on npm](https://www.npmjs.com/package/proxy-finder-mcp)
 
 ## Install
@@ -38,6 +38,11 @@ claude mcp add proxy-finder -- npx -y proxy-finder-mcp
 
 Add the same block to `.cursor/mcp.json`.
 
+### Google Antigravity
+
+Open **Manage MCP Servers** (Command Palette → "MCP") and add a new server, or edit its
+`mcp_config.json` with the same `mcpServers` block shown above.
+
 ## Tools
 
 | Tool | Description |
@@ -48,7 +53,7 @@ Add the same block to `.cursor/mcp.json`.
 | `list_countries` | Lists which countries are currently covered, with counts. |
 
 Full parameter reference and usage examples are in the
-[README](https://github.com/shakthizen/proxy-mcp#readme).
+[README](https://github.com/shakthizen/proxy-finder-mcp#readme).
 
 ## Why
 
